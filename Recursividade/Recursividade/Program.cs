@@ -23,12 +23,14 @@ class Menu
         {
             case 1:
                 Menu.cadastrar();
+                Console.Clear();
                 break;
             case 2:
                 Console.Clear();
                 Menu.lerClientes(1);
                 Console.WriteLine("Pressione Enter para voltar");
                 string nada = Console.ReadLine();
+                Console.Clear();
                 break;
             default:
                 return;
