@@ -70,7 +70,7 @@ class Menu
             return;
         }
         var cliente=JsonSerializer.Deserialize<Cliente>(json);
-        Console.WriteLine("Nome: " + cliente?.Nome + ",Telefone: " + cliente?.Telefone);
+        Console.WriteLine(cliente.ToString());
         Menu.lerClientes(idAtual + 1);
     }
     private static int recolherId(int idAtual)
